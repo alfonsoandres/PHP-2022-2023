@@ -1,0 +1,40 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>Cuadrados de colores</title>
+<style>
+body {
+	background: white;
+	text-align: justify;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #757E82;
+}
+
+
+</style>
+</head>
+<body>
+	<h1>¡PIEDRA,PAPEL,TIJERA!</h1>
+	
+		<?php
+		define ('PIEDRA1',"&#x1F91C;");
+		define ('PIEDRA2',"&#x1F91B;");
+		define ('TIJERAS',"&#x1F596;");
+		define ('PAPEL',"&#x1F91A;");
+		
+
+
+		echo PIEDRA1;
+		echo PIEDRA2;
+		echo TIJERAS;
+		echo PAPEL;
+		
+		
+        ?>
+        
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
+</body>
+</html>
