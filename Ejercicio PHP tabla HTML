@@ -1,0 +1,41 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>Ejercicio1</title>
+<style>
+body {
+	background: white;
+	text-align: justify;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #757E82;
+}
+table {
+  border: 1px;
+}
+
+
+</style>
+</head>
+<body>
+<?php
+$valores =[];
+
+for ($x=0;$x<20;$x++) {
+    $num_aleatorio = rand(1,10);
+    array_push($valores,$num_aleatorio);
+  }
+?>
+<table class="default">
+  <tr>
+  <th>Numeros</th>
+  </tr>
+  <tr>
+    <td>
+      <?php print_r($valores) ?>
+    </td>
+  </tr>
+</table>    
+
+</body>
+</html>
