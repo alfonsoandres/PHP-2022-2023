@@ -38,7 +38,15 @@ else if ((! isset($_FILES['archivos']['name']))) {
             $tamanioFichero  =   $_FILES['archivos']['size'][$i];
             $temporalFichero =   $_FILES['archivos']['tmp_name'][$i];
             $errorFichero    =   $_FILES['archivos']['error'][$i];
-        
+        if (!file_exists($directorioSubida .'/'. $nombreFichero)) {
+            if ($tipoFichero=='image/png' || $tipoFichero=='image/jpg'  ) {
+            
+            }else{
+                echo"tipo de fichero no valido";
+            }
+        }else{
+            echo"ya existe loseinto maqina";
+        }
             if (move_uploaded_file($temporalFichero,  $directorioSubida .'/'. $nombreFichero) == true) {
                 $mensaje .= 'Archivo guardado en: ' . $directorioSubida .'/'. $nombreFichero . ' <br />';
             } else {
@@ -51,7 +59,7 @@ else if ((! isset($_FILES['archivos']['name']))) {
 }
     // Obtengo el código de error de la operación, 0 si todo ha ido bien
 
-    //PA MEDIA HORA NI ME PRESENTO AQUI PA DESPUES IRME YA ET LO DIGO YO
+    //
     // diselo
     
 
